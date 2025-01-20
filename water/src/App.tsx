@@ -1,16 +1,17 @@
 
-
 import './App.css'
-
-import Bmi from './page/Water'
-
+import Water from './page/Water'
+import { Routes,Route } from 'react-router'
 
 
 function App() {
  
   return (
     <>
-      <Bmi></Bmi>
+      <Routes>
+        <Route path="/water" element={<Water></Water>}></Route>
+      </Routes>
+        
     </>
   )
 }
